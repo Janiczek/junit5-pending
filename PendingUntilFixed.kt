@@ -26,7 +26,7 @@ import org.opentest4j.TestAbortedException
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)
 @ExtendWith(PendingUntilFixedExtension::class)
-annotation class PendingUntilFixed(val jiraIssue: String)
+annotation class PendingUntilFixed(@Suppress("unused") val jiraIssue: String)
 
 private class PendingUntilFixedExtension : TestExecutionExceptionHandler, AfterTestExecutionCallback {
 
