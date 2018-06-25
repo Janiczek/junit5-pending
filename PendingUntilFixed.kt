@@ -58,10 +58,10 @@ private class PendingUntilFixedExtension : TestExecutionExceptionHandler, AfterT
         if (testHasThrownException) {
             throw TestAbortedException()
         } else {
-            throw PendingTestException()
+            throw PendingTestPassedException()
         }
     }
 }
 
-class PendingTestException :
+class PendingTestPassedException :
     Exception("Pending test passed, remove the `@PendingUntilFixed` annotation.")
