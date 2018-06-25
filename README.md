@@ -1,9 +1,9 @@
 # junit5-pending
 PendingUntilFixed for JUnit 5. Written in Kotlin.
 
-## @PendingUntilFixed("ISSUE-42")
+## What is this?
 
-The PendingUntilFixed annotation is intended for tests which currently fail
+The `PendingUntilFixed` annotation is intended for tests which currently fail
 but will be fixed in the future (by implementing or fixing the tested code).
 
 If the test **fails**, the failure gets swallowed and we don't get a failing test.
