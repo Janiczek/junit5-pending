@@ -21,7 +21,7 @@ import org.opentest4j.TestAbortedException
  * ```
  *
  * @see PendingUntilFixedExtension
- * @see PendingTestException
+ * @see PendingTestPassedException
  */
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)
